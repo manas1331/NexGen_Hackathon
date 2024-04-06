@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Video playlists</title>
+
+   <!-- font awesome cdn link  -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+
+   <!-- custom css file link  -->
+   <link rel="stylesheet" href={{ url_for('static', filename= "/css/style.css") }}>
+
+</head>
+<body>
+
+<header class="header">
+   
+   <section class="flex">
+
+      <a href="home.html" class="logo">EduNest.</a>
+
+      <div class="icons">
+         <div id="menu-btn" class="fas fa-bars"></div>
+         <div id="search-btn" class="fas fa-search"></div>
+         <div id="user-btn" class="fas fa-user"></div>
+         <div id="toggle-btn" class="fas fa-sun"></div>
+      </div>
+
+      <div class="profile">
+         <img src={{ url_for('static', filename= "/images/author-01.png") }} alt="Course #4">
+         <h3 class="name">User-1</h3>
+         <p class="role">Student</p>
+         <a href="profile.html" class="btn">View profile</a>
+         
+      </div>
+
+   </section>
+
+</header>   
+
+<div class="side-bar">
+
+   <div id="close-btn">
+      <i class="fas fa-times"></i>
+   </div>
+
+   <div class="profile">
+      <img src={{ url_for('static', filename= "/images/author-01.png") }} alt="Course #4">
+      <h3 class="name">Unit-1</h3>
+      <p class="role">Student</p>
+      <a href="profile.html" class="btn">View profile</a>
+   </div>
+
+   <nav class="navbar">
+      <a href="..\\index1.html"><span>Back to Main Page </span></a>
+      <a href="subjects.html"><i class="fas fa-home"></i></i><span>Home</span></a>
+      <a href="courses.html"><i class="fas fa-graduation-cap"></i><span>Courses</span></a>
+      <a href="teachers.html"><i class="fas fa-chalkboard-user"></i><span>Teachers</span></a>
+      <a href="Quiz/quiz.html"><i class="fas fa-graduation-cap"></i><span>Quiz</span></a>
+      
+   </nav>
+
+</div>
+
+<section class="playlist-details">
+
+   <h1 class="heading">Playlist details</h1>
+
+   <div class="row">
+
+      <div class="column">
+         
+   
+         <div class="thumb">
+            <img src={{ url_for('static', filename= "/images/playlist_bg.jpg") }} alt="Course #4">
+            <span>10 videos</span>
+         </div>
+      </div>
+      <div class="column">
+         <div class="tutor">
+            <img src={{ url_for('static', filename= "/images/pic-2.jpg") }} alt="Course #4">
+            <div>
+               <h3>John</h3>
+               <span>21-10-2023</span>
+            </div>
+         </div>
+   
+         <div class="details">
+            <h3>Recorded video's tutorials</h3>
+            <p>These are the recorded videos of all the subjects i.e Physics,Chemistry,Mathematics,General Knowledge,HTML and CSS,English,Biology,History and Web Development.Look into these recorded videos for better understanding on the topic.</p>
+            <a href="teacher_john.html" class="inline-btn">view profile</a>
+         </div>
+      </div>
+   </div>
+
+</section>
+
+<section class="playlist-videos">
+
+   <h1 class="heading">playlist videos</h1>
+
+   <div class="box-container">
+
+      <a class="box" href="watch-video.html">
+         <i class="fas fa-play"></i>
+         <img src={{ url_for('static', filename= "/images/post-1-1.png") }} alt="Course #4">
+         <h3>complete HTML tutorial (part 01)</h3>
+      </a>
+
+      <a class="box" href="watch-video.html">
+         <i class="fas fa-play"></i>
+         <img src={{ url_for('static', filename= "/images/post-1-2.png") }} alt="Course #4">
+         <h3>complete HTML tutorial (part 02)</h3>
+      </a>
+
+      <a class="box" href="watch-video.html">
+         <i class="fas fa-play"></i>
+         <img src={{ url_for('static', filename= "/images/post-1-3.png") }} alt="Course #4">
+         <h3>complete HTML tutorial (part 03)</h3>
+      </a>
+
+      <a class="box" href="watch-video.html">
+         <i class="fas fa-play"></i>
+         <img src={{ url_for('static', filename= "/images/post-1-4.png") }} alt="Course #4">
+         <h3>complete HTML tutorial (part 04)</h3>
+      </a>
+
+      <a class="box" href="watch-video.html">
+         <i class="fas fa-play"></i>
+         <img src={{ url_for('static', filename= "/images/post-1-5.png") }} alt="Course #4">
+         <h3>complete HTML tutorial (part 05)</h3>
+      </a>
+
+      <a class="box" href="watch-video.html">
+         <i class="fas fa-play"></i>
+         <img src={{ url_for('static', filename= "/images/post-1-6.png") }} alt="Course #4">
+         <h3>complete HTML tutorial (part 06)</h3>
+      </a>
+
+   </div>
+
+</section>
+
+
+
+
+
+
+
+
+<footer class="footer">
+
+   &copy; copyright @ 2024 by <span>EduNest</span> | all rights reserved!
+
+</footer>
+
+<!-- custom js file link  -->
+<script src={{ url_for('static', filename= "js/script.js") }}></script>
+
+   
+</body>
+</html>
