@@ -45,7 +45,21 @@
         <li><a href="#section4">Courses</a></li>
         <!-- <li><a href="#section5">Video</a></li> -->
         <li><a href="#section6">Contact</a></li>
-        <li><a href="https://mediafiles.botpress.cloud/defb6b77-7d07-40e6-8210-4b9c41a5596b/webchat/bot.html" class="external">Chatbot</a></li>
+<li><a id="chatbotLink" href="https://mediafiles.botpress.cloud/defb6b77-7d07-40e6-8210-4b9c41a5596b/webchat/bot.html" class="external">Chatbot</a></li>
+<script>
+    window.embeddedChatbotConfig = {
+        chatbotId: "5aSAhXmMgoMxTr6oMuCqi",
+        domain: "www.chatbase.co"
+    };
+</script>
+<script src="https://www.chatbase.co/embed.min.js" chatbotId="5aSAhXmMgoMxTr6oMuCqi" domain="www.chatbase.co" defer></script>
+<script>
+    document.getElementById('chatbotLink').addEventListener('click', function(event) {
+        event.preventDefault(); // Prevent the default link behavior
+        window.chatbase.openChat(); // Open the embedded chat window
+    });
+</script>
+
       </ul>
     </nav>
   </header>
