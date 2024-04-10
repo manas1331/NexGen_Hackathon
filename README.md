@@ -1,6 +1,6 @@
 # Personalized Learning Website
 
-We built a website for personalized learning in the 24hr NexGen Hackathon.
+We built a website for personalized learning website named as **EDUNEST** in the 24hr NexGen Hackathon.
 
 Tech Stack used:
 * HTML
